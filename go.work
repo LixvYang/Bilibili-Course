@@ -1,0 +1,6 @@
+go 1.20
+
+use (
+	./grpc/2.gRPC入门及环境搭建/client
+	./grpc/2.gRPC入门及环境搭建/server
+)

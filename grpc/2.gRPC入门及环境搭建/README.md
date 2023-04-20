@@ -108,7 +108,7 @@ service Greetering {
 接着，你需要对这两个.proto 通过我们刚刚下载的的protoc工具和插件去生成相应的go代码。
 
 ```
-protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative --grpc-gateway_out=. --grpc-gateway_opt=paths=source_relative server/proto/hello.proto client/proto.hello.proto
+protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative server/proto/hello.proto client/proto.hello.proto
 ```
 
 最后分别在两个目录下执行`go mod tidy`，然后目录的结构就如下所示
